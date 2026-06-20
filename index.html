@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+    <script src="image.js" defer></script>
+</head>
+
+<body>
+    <div class="about">
+       <h1>The Great Outdoors</h1>
+        <p> Explore breathtaking landscapes, wildlife and nature photography</p>
+        </div>
+        <div class="toolbar">
+
+    <div id="category">
+        <button value="all">All</button>
+        <button value="nature">Nature</button>
+        <button value="birds">Birds & Insects</button>
+        <button value="flowers">Flowers</button>
+        <button value="animals">Animals</button>
+    </div>
+
+    <div class="filter-box">
+        
+        <select id="filters">
+        
+            <option value="none">🎨 Original</option>
+            <option value="grayscale">Grayscale</option>
+            <option value="sepia">Sepia</option>
+            <option value="blur">Blur</option>
+            <option value="brightness">Brightness</option>
+        </select>
+    </div>
+
+</div>
+
+    <div class="gallery" id="gallery">  </div>
+
+<div id="lightbox">
+    <span id="close">&times;</span>
+     
+
+    <button id="prev-light">❮</button>
+
+    <img id="lightbox-img">
+
+    <button id="next-light">❯</button>
+</div>
+</body>
+</html>
